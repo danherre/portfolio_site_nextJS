@@ -13,7 +13,7 @@ export default function BioLinks() {
   return (
     <div>
       <Navbar />
-      <main className='bg-rosy_brown font-roboto font-thin'>
+      <main className='font-playfair'>
         <div
           ref={ref1}
           className={`transition-opacity duration-300 ease-in sm:duration-700 ${

@@ -23,10 +23,10 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className='py-8 lg:hidden'>
+      <div className='lg:hidden'>
         <div className='relative flex items-center justify-center'>
           <img src='/headshot.jpg' alt='Headshot' className='h-auto w-full' />
-          <div className='absolute m-10 w-full text-center'>
+          <div className='absolute m-10 w-full pt-36 text-center'>
             <Bio />
           </div>
         </div>

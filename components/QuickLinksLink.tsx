@@ -14,7 +14,7 @@ const QuickLinksLink: FunctionComponent<QuickLinksLinkProps> = ({
   children,
 }) => {
   return (
-    <div className='text-black-green group text-xl transition duration-300 hover:font-normal hover:text-burgundy'>
+    <div className='group text-xl text-russian_violet transition duration-300 hover:font-normal hover:text-burgundy'>
       <Link href={children.link}>
         <div>{children.label}</div>
       </Link>

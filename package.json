@@ -17,6 +17,7 @@
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",

@@ -9,33 +9,14 @@ interface NavItem {
   page: string;
 }
 
-/* const NAV_ITEMS: Array<NavItem> = [
-  {
-    label: 'music',
-    page: '/biolinks',
-  },
-  {
-    label: 'acting',
-    page: '/biolinks',
-  },
-  {
-    label: 'modeling',
-    page: '/biolinks',
-  },
-  {
-    label: 'software development',
-    page: '/biolinks',
-  },
-  {
-    label: 'contact & socials',
-    page: '#contact',
-  },
-]; */
-
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: 'my links',
     page: '/biolinks',
+  },
+  {
+    label: 'reels',
+    page: '/reels',
   },
   {
     label: 'contact & socials',
@@ -55,7 +36,7 @@ export default function Navbar() {
         <div key={'nav_item_' + idx}>
           <Link
             href={section.page}
-            className='hover:text-rosy_brown'
+            className='hover:text-burgundy-600'
             onClick={() => setNavbar(false)}
           >
             {section.label}

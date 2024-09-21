@@ -18,7 +18,7 @@ const ICONS: IconsObject = {
     filePath: 'https://danielherrerias.com//instagram-logo-regular.png',
   },
   tiktok: {
-    link: 'https://www.tiktok.com/@danielangel.us',
+    link: 'https://www.tiktok.com/@danielherrerias.j',
     filePath: 'https://danielherrerias.com//tiktok.png',
   },
   linkedin: {
@@ -33,6 +33,10 @@ const ICONS: IconsObject = {
     link: 'https://www.youtube.com/@danielherrerias8237',
     filePath: 'https://danielherrerias.com//youtube.png',
   },
+  /* {
+    link: 'https://www.youtube.com/@danielherrerias8237',
+    filePath: 'https://danielherrerias.com//youtube.png',
+  } */
 };
 
 export const BoxIcon: FunctionComponent<BoxIconProps> = ({ iconName }) => {

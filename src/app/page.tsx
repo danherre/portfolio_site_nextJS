@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className='bg-rosy_brown font-roboto font-thin'>
+      <main className='font-roboto font-thin'>
         <div
           ref={ref1}
           className={`transition-opacity duration-500 ease-in ${
