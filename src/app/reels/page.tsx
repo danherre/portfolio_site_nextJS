@@ -8,53 +8,63 @@ import EmbeddedVid from '../../../components/EmbeddedVid';
 
 const ACTING_LINKS_1 = [
   {
-    link: 'https://www.youtube.com/embed/6qQ1qJWhHZA?si=fbzgf4ivpuwbn9ds',
+    link: 'https://www.youtube-nocookie.com/embed/6qQ1qJWhHZA?si=7oWq-FZO82sPtlTI',
+    yt: 'https://youtu.be/6qQ1qJWhHZA',
     description: "'Experimentality' - Stone Street Studios, Nikolas Elrifi",
   },
   {
-    link: 'https://www.youtube.com/embed/Vjua_tfjbRM?si=0dfI8tkHkvJ-y32a',
+    link: 'https://www.youtube-nocookie.com/embed/Vjua_tfjbRM?si=LJvuBzIdRbPdGEWd',
+    yt: 'https://youtu.be/Vjua_tfjbRM',
     description: "'120 Años de Atleti' - Lee Films (Spain)",
   },
 ];
 
 const ACTING_LINKS_2 = [
   {
-    link: 'https://www.youtube.com/embed/AWnugPmNUaE?si=4Wr0HU5KPPKA-xo6',
+    link: 'https://www.youtube-nocookie.com/embed/AWnugPmNUaE?si=4Wr0HU5KPPKA-xo6',
+    yt: 'https://youtu.be/AWnugPmNUaE?si=4tuxWIfqR63bTaIb',
     description: "'Misery = Comfort' - Independent Film Fund, Michael Jones",
   },
   {
-    link: 'https://www.youtube.com/embed/sMVTeGKses4?si=oiPg-COIogaDQkBE',
+    link: 'https://www.youtube-nocookie.com/embed/sMVTeGKses4?si=aSdfvQ7YUrRmh0V5',
+    yt: 'https://youtu.be/sMVTeGKses4',
     description: "'Una Carta' - Independent Film Fund, Michael Jones",
   },
 ];
 
 const MUSICAL_LINKS_1 = [
   {
-    link: 'https://www.youtube.com/embed/NAhLGpa6bv4?si=MKX9VRoLtf3T9A6h',
+    link: 'https://www.youtube-nocookie.com/embed/NAhLGpa6bv4?si=A6DI-_3xes596exn',
+    yt: 'https://youtu.be/NAhLGpa6bv4',
     description: "'Goodbye' from 'Catch Me If You Can' - Broadway Sessions",
   },
   {
-    link: 'https://www.youtube.com/embed/woIM2s_vhyc?si=AHaJqsoiTCErqZca',
+    link: 'https://www.youtube-nocookie.com/embed/woIM2s_vhyc?si=-UnBZsRzIsEjETyW',
+    yt: 'https://youtu.be/woIM2s_vhyc',
     description: "'30/90' from 'Tick, Tick... Boom!' - Broadway Sessions",
   },
 ];
 
 const MUSICAL_LINKS_2 = [
   {
-    link: 'https://www.youtube.com/embed/Y4fFyYgC0GE?si=8C2AbQkzFg4-cVhN',
+    link: 'https://www.youtube-nocookie.com/embed/Y4fFyYgC0GE?si=efKPWEZ_VtILzi-w',
+    yt: 'https://youtu.be/Y4fFyYgC0GE',
     description:
       "'Are You There?' from 'Bare: A Pop Opera' - University of Michigan MUSKET, James Harbaugh",
   },
   {
-    link: 'https://www.youtube.com/embed/4QqMu4cP4go?si=E9UnuCFvOgCn1eGW',
+    link: 'https://www.youtube-nocookie.com/embed/4QqMu4cP4go?si=a5FcTVWw2qaa9b1X',
+    yt: 'https://youtu.be/4QqMu4cP4go',
     description:
       "'Promise' from 'Bare: A Pop Opera' - University of Michigan MUSKET, James Harbaugh",
   },
 ];
 
 export default function Reel() {
-  const renderLinks = (links, size) => {
-    return links.map((link) => <EmbeddedVid link={link} size={size} />);
+  const renderLinks = (links: any, size: any) => {
+    return links.map((link: any) => (
+      <EmbeddedVid key={link.id} link={link} size={size} />
+    ));
   };
   return (
     <div>
@@ -73,10 +83,10 @@ export default function Reel() {
               {renderLinks(ACTING_LINKS_2, 's')}
             </div>
             <div className='hidden lg:block'>
-              <div className='flex items-center justify-center space-x-6'>
+              <div className='flex justify-center space-x-6'>
                 {renderLinks(ACTING_LINKS_1, 'l')}
               </div>
-              <div className='flex items-center justify-center space-x-6'>
+              <div className='flex justify-center space-x-6'>
                 {renderLinks(ACTING_LINKS_2, 'l')}
               </div>
             </div>
@@ -88,17 +98,19 @@ export default function Reel() {
               {renderLinks(MUSICAL_LINKS_2, 's')}
             </div>
             <div className='hidden lg:block'>
-              <div className='flex items-center justify-center space-x-6'>
+              <div className='flex justify-center space-x-6'>
                 {renderLinks(MUSICAL_LINKS_1, 'l')}
               </div>
-              <div className='flex items-center justify-center space-x-6'>
+              <div className='flex justify-center space-x-6'>
                 {renderLinks(MUSICAL_LINKS_2, 'l')}
               </div>
             </div>
           </div>
         </div>
       </main>
-      <Contact />
+      <section id='contact'>
+        <Contact />
+      </section>
     </div>
   );
 }

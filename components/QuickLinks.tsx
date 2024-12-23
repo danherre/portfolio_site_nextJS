@@ -2,12 +2,16 @@ import React from 'react';
 import QuickLinksLink from './QuickLinksLink';
 import { Title } from './Title';
 
-interface LinkData {
+export interface LinkData {
   label: string;
   link: string;
 }
 
 const CURRENT_LINKS: Array<LinkData> = [
+  {
+    label: 'fucking young! editorial',
+    link: 'https://fuckingyoung.es/coney-island-baby/',
+  },
   {
     label: "listen to my new single 'u made me cry'",
     link: 'https://ffm.to/8kvx7pz',
@@ -17,12 +21,12 @@ const CURRENT_LINKS: Array<LinkData> = [
     link: 'https://ffm.to/pljmevp',
   },
   {
-    label: 'reel',
-    link: 'https://danielherrerias.com/reel',
+    label: 'reels',
+    link: 'https://danielherrerias.com/reels',
   },
   {
-    label: 'headshots',
-    link: 'https://www.dropbox.com/sh/7vyvl4mrlofggnl/AAAtQn5Z4qqGCC_-VCylI_VOa?dl=0',
+    label: 'headshot & resume',
+    link: 'https://danielherrerias.com/headshot-resume',
   },
   /*{
     label: 'MODELING DIGITALS',
@@ -42,14 +46,17 @@ const CURRENT_LINKS: Array<LinkData> = [
   }, */
 ];
 
-export const QuickLinks = () => {
+export const QuickLinks = ({
+  currLinks = CURRENT_LINKS,
+  title = 'My links',
+}) => {
   return (
     <div className='flex h-[calc(100vh-80px)] flex-col items-center justify-center space-y-6'>
       <div className='text-burgundy'>
-        <Title>My Links</Title>
+        <Title>{title}</Title>
       </div>
       <div className='space-y-4 text-center'>
-        {CURRENT_LINKS.map((item, idx) => {
+        {currLinks.map((item, idx) => {
           return (
             <QuickLinksLink key={'nav_item_' + idx}>{item}</QuickLinksLink>
           );

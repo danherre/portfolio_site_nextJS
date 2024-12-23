@@ -19,6 +19,10 @@ const NAV_ITEMS: Array<NavItem> = [
     page: '/reels',
   },
   {
+    label: 'headshot & resume',
+    page: '/headshot-resume',
+  },
+  {
     label: 'contact & socials',
     page: '#contact',
   },
