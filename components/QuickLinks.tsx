@@ -17,12 +17,12 @@ const CURRENT_LINKS: Array<LinkData> = [
     link: 'https://ffm.to/8kvx7pz',
   },
   {
-    label: "listen to my debut single 'I need to know'",
-    link: 'https://ffm.to/pljmevp',
-  },
-  {
     label: 'reels',
     link: 'https://danielherrerias.com/reels',
+  },
+  {
+    label: 'acting profiles',
+    link: 'https://danielherrerias.com/acting-profiles',
   },
   {
     label: 'headshot & resume',

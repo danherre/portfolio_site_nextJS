@@ -19,6 +19,10 @@ const NAV_ITEMS: Array<NavItem> = [
     page: '/reels',
   },
   {
+    label: 'acting profiles',
+    page: '/acting-profiles',
+  },
+  {
     label: 'headshot & resume',
     page: '/headshot-resume',
   },
