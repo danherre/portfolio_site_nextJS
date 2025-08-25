@@ -13,8 +13,8 @@ const CURRENT_LINKS: Array<LinkData> = [
     link: 'https://fuckingyoung.es/coney-island-baby/',
   },
   {
-    label: "listen to my new single 'u made me cry'",
-    link: 'https://ffm.to/8kvx7pz',
+    label: "pre-save my new single 'IAAC'",
+    link: 'https://distrokid.com/hyperfollow/danielherrerias/iaac',
   },
   {
     label: 'reels',
