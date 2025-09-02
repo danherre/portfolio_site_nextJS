@@ -11,10 +11,11 @@
     "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
+    "22": "^0.0.0",
     "boxicons": "^2.1.4",
-    "next": "^13.5.4",
-    "react": "latest",
-    "react-dom": "latest"
+    "next": "^15.5.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",

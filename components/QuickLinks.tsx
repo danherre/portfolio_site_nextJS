@@ -13,7 +13,7 @@ const CURRENT_LINKS: Array<LinkData> = [
     link: 'https://fuckingyoung.es/coney-island-baby/',
   },
   {
-    label: "pre-save my new single 'IAAC'",
+    label: "stream my new single 'IAAC'",
     link: 'https://distrokid.com/hyperfollow/danielherrerias/iaac',
   },
   {

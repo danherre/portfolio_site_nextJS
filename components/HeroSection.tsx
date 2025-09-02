@@ -1,10 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import Bio from './Bio';
+import { SWEBio } from './SWEBio';
 
 export const HeroSection = () => {
-  return (
-    <div>
+  return <SWEBio />;
+  {
+    /* 
+      code for acting site
+      <div>
       <div className='hidden lg:block'>
         <div className='flex h-screen items-center'>
           <div className='relative h-full w-1/2 overflow-hidden'>
@@ -24,13 +28,8 @@ export const HeroSection = () => {
         </div>
       </div>
       <div className='lg:hidden'>
-        <div className='relative flex items-center justify-center'>
-          <img src='/headshot.jpg' alt='Headshot' className='h-auto w-full' />
-          <div className='absolute m-10 w-full pt-36 text-center'>
-            <Bio />
-          </div>
-        </div>
+        <SWEBio/>
       </div>
-    </div>
-  );
+    </div> */
+  }
 };
